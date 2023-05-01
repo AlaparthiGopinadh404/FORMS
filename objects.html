@@ -1,0 +1,183 @@
+<html>
+
+<head>
+    <title>
+        objects
+    </title>
+</head>
+
+<body>
+    <script>
+        let user = {
+            name: "gopinadh",
+            age: "21",
+            "like birds": true
+        };
+        let key = "name";
+        console.log(user[key])
+        //  let key = prompt("my name is","name");
+        console.log(user[key]);
+        console.log(user.name)
+        console.log(user.age)
+        delete (user.age)
+        console.log(user["like birds"])
+        // let fruit = prompt("Which fruit to buy?","mango");
+        // let bag ={
+        //     [fruit]:10,
+        // };
+        // console.log(bag.mango);
+        let fruit = prompt("which fruit to buy?", "apple");
+        let bag = {};
+        bag[fruit] = 100;
+        console.log(bag.apple)
+        let fruits = "apple";
+        let bags = {
+            [fruits + 'computers']: 10
+        }
+        console.log(bags.applecomputers)
+        function makeUser(name, age) {
+            return {
+                name: name,
+                age: age
+            };
+        }
+        let users = makeUser("Gopi", "24");
+        console.log(users.age)
+        // let obj ={
+        //     for:10,
+        //     let:20,
+        //     return:30
+        // };
+        // console.log(obj.for+obj.let+obj.return)
+        let userss = { name: "gopi", age: 24 };
+        console.log("name" in userss)
+        console.log("age" in userss)
+        let person = { age: 24 };
+        let keys = "age";
+        console.log(keys in person)
+        let codes = {
+            "45": "USA",
+            "46": "UK",
+            "47": "ITALY",
+            "1": "INDIA"
+        };
+        for (let code in codes) {
+            console.log(codes)
+        }
+        let cars = [
+            {
+                "color": "purple",
+                "type": "minivan",
+                "registration": new Date('2017-01-03'),
+                "capacity": 7,
+                "name":"suzuki"
+            },
+            {
+                "color": "red",
+                "type": "minivan",
+                "registration": new Date('2017-01-03'),
+                "capacity": 4,
+                "name":"audi"
+            },
+            
+            {
+                "color": "green",
+                "type": "minivan",
+                "registration": new Date('2017-01-03'),
+                "capacity": 8,
+                "name":"creta"
+            },
+            
+            {
+                "color": "blue",
+                "type": "minivan",
+                "registration": new Date('2017-01-03'),
+                "capacity": 10,
+                "name":"volvo"
+            },
+            
+
+        ]
+        console.log("car",cars.unshift(cars));
+        let ar =['praveen','gopi','hemanth','raja','venky','loki','mohan']
+        // let ar =[12,23,34,45,56,67,78,79,80]
+        // console.log(ar[ar.length-1]) 
+        for( var k=0;k<=ar.length-1;k++){
+            console.log(ar[k])
+        }
+        var br ={
+            firstname:"gopi",
+            lastname:"A",
+            weight:54,
+            DOB:1996,
+            age:26
+            
+        }
+         console.log(br.age)
+         let mobile ={
+            name:"Vivo",
+            RAM:"6GB",
+            ROM :"34GB",
+            camera:"32px",
+            operating_system:"IOS"
+         }
+        //  console.log(mobile['camera'])
+        //  console.log(mobile['RAM'])
+        //  var k ='name';
+        //  console.log(mobile[k])
+        //  console.log(mobile.name)
+        //  console.log(mobile.operating_system)
+        mobile.price=30000;
+        mobile.brand="realme";
+         for(var k in mobile){
+            // console.log('hi',k)
+            console.log('hi',k,mobile[k])
+            
+         }
+         let array = {}
+         array.type ="villa";
+         array.location="hyderabad";
+         array.area ="ammerpet"
+         console.log(array)
+
+
+         let students = [
+            {
+                firstname:"gopi",
+                lastname:'A',
+                age:24,
+                DOB:1995,
+                Address:"Hyderabad"
+            },
+            {
+                firstname:"gopia",
+                lastname:'A',
+                age:24,
+                DOB:1952,
+                Address:"vijayawada"
+            },
+            {
+                firstname:"gopinadh",
+                lastname:'A',
+                age:24,
+                DOB:1954,
+                Address:"tenali"
+            },
+            {
+                firstname:"gopich",
+                lastname:'A',
+                age:24,
+                DOB:1953,
+                Address:"guntur"
+            },
+
+         ]
+        for(var i=0; i<=students.length-1;i++){
+            if(students[i].DOB<1962){
+                console.log(students[i].firstname)
+            }
+        }
+    </script>
+</body>
+
+</html>

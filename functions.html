@@ -1,0 +1,100 @@
+<html>
+
+<head>
+    <title>Strings</title>
+</head>
+
+<body>
+    <script>
+        let text = "hello javascript";
+        console.log(text)
+        let test = "hello react";
+        console.log(test)
+        let pass = 'hello html'
+        console.log(pass)
+        let fail = "hi lokesh"
+        let length = fail.length
+        console.log(length)
+        let ar = "we are the front\"end\"developers";
+        console.log(ar)
+        let textt = 'It\'s alright.';
+        console.log(textt)
+        let x = "John";
+        let y = new String("John");
+
+        console.log(x)
+        console.log(y)
+        // let str="hello"
+        // alert(str[0])
+        let txt = "Hello World"
+
+        // trim 
+        // tolowercase
+        // split
+        // slice 
+        // sort
+        // repeat
+        // replace
+
+        console.log('HELLO WORLD IN JAVASCRIPT'.toLowerCase());
+        console.log('helloworldjavascript'.toUpperCase());
+        console.log('iNTERFACE'[0].toUpperCase());
+        let str = "Widget with id";
+        console.log(str.indexOf('Widget'))
+
+        let strr = 'Widget with id';
+        let lengthh = strr.length
+
+        console.log(strr.indexOf('id', 2))
+        // includes
+        let array = "hello javascript"
+        console.log(array.charAt(10))
+        console.log(array.indexOf('a'))
+        console.log(array.lastIndexOf('t'))
+        // concat strings are immutable 
+        let g = "hello react"
+        let h = "single page application"
+
+        console.log(g.concat(h))
+        //  trim:to remove spaces
+        let n = "  java  reactisjs library       "
+        console.log(n.trim())
+        console.log(n.length)
+        // split
+        let o = "react is js library"
+        console.log(o.split('l'))
+        console.log(o.split('a'))
+        let r = "Java script is open source"
+        console.log(r.startsWith('Java'))
+        console.log(r.endsWith('e'))
+        // slice cut  to pass the parameters two first one is starting index,and second one is to cut the index
+        let q = "javascript"
+        console.log(q)
+        console.log(q.length)
+        console.log(q.slice(0, 4))
+        console.log(q.slice(1, 8))
+        console.log(q.slice(2, 5))
+
+        let s = 'Widget with id';
+
+        alert(s.indexOf('id', 2))
+        let salary = 10000;
+        let firstName = " gopi";
+        console.log("my name is" + firstName + " and my salary is " + salary + "")
+        console.log(`myname is ${firstName} and my salary is${salary}`)
+
+        let strrr = "stringify";
+
+        // these are same for substring
+        console.log(strrr.substring(2, 6)); // "ring"
+        console.log(strrr.substring(6, 2)); // "ring"
+
+        // // ...but not for slice:
+        // console.log(strrr.slice(2, 6)); // "ring" (the same)
+        // console.log(strrr.slice(6, 2));
+
+    </script>
+
+</body>
+
+</html>

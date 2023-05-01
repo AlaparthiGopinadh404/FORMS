@@ -1,0 +1,67 @@
+<html>
+
+<body>
+    <script>
+        // let array =[10,20,30,40,50]
+        // console.log(array);
+
+        // let array=[23,34,54,0,4,7]
+        // console.log(array.at(4))
+        // console.log(array.indexOf(34));
+        // console.log(array.indexOf(4))
+        // console.log(array.at(-3))
+
+        // let ar =[1,2,3,4,5,6]
+        // let br=[7,8,9]
+        // console.log( ar.concat(br))
+
+        // let movie = {
+        //     name: "rrr",
+        //     director: 'rajamouli',
+        //     producer: 'ramcharan',
+        //     actor: 'ntr'
+        // }
+        // let director = 'director'
+        // movie.anchor = "suma",
+        //     movie.actor = 'ram'
+        // console.log(movie)
+        // console.log(movie.name)
+        // console.log(movie['actor'], movie[director])
+        // let movie1 = new Object();
+        // movie1.name = 'RRR';
+        // movie1.anchor = "suma";
+        // movie1.director = "dilraju"
+        // console.log(movie1)
+        // movie1.budget = "3000cr"
+        // console.log(movie1)
+        // let ar = [23, 41, 64, 49, 64]
+        // let sixtyFour = ar.findLastIndex(function (value) {
+        //     return value < 64
+        // });
+        // console.log(sixtyFour);
+        // var br = [0, 1, 2, [3, 4]];
+        // console.log(br[3][1])
+        // let array = [1, 2, 3, 4, 5];
+        // let initialVale = 1;
+        // let sumWithInitial = array.reduce(
+        //     (accumulator, currentValue) => accumulator + currentValue, initialVale
+        // );
+        // console.log(sumWithInitial);
+
+        const arr = [15, 16, 17, 18, 19];
+
+        function reducer(accumulator, currentValue, index) {
+            const returns = accumulator + currentValue;
+            console.log(
+                `accumulator: ${accumulator}, currentValue: ${currentValue}, index: ${index}, returns: ${returns}`,
+            );
+            return returns;
+        }
+
+        arr.reduce(reducer);
+
+    </script>
+
+</body>
+
+</html>

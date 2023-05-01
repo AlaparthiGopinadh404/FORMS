@@ -1,0 +1,29 @@
+<html>
+    <head></head>
+    <body>
+     <form>
+        <label for="fname">Firstname</label>:
+        <input type="text" id="fname" placeholder="firstname" required/>
+        <br/>
+        <label for="lname">Lastname</label>:
+        <input type="text" id="lname" placeholder="lastname" required/>
+        <br/>
+        <label for="email">Email</label>:
+        <input type="email" id="email" placeholder="enter email" pattern="\^[^\s@]+@[^\s@]+\.[^\s@]+$\" required/>
+        <br/>
+        <label for="password">Password</label>:
+        <input type="password" id="password" placeholder="enter password" pattern='\^(?=.*\d)(?=.*[A-Z])(?=.*[a-z])(?=.*[a-zA-Z!#$%&? "])[a-zA-Z0-9!#$%&?]{8,20}$\' required/>
+        <br/>
+        <label for="salary">Salary</label>:
+        <input type="number" id="salary" placeholder="enter salary" required/>
+        <br/>
+        <label for="gender">Gender</label>:
+        <input type="radio" id="gender"/>
+        <br/>
+        <label for="dob">Dateofbirth</label>:
+        <input type="date" id="dob" min="2022-11-10" required/>
+        <br/>
+        <button>Submit</button>
+     </form>
+    </body>
+</html>
